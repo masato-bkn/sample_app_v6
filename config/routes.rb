@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   # ログイン処理
   post '/login', to:'sessions#create'
   # ログアウト処理
-  delete '/logout', to: 'sessions#destory'
+  delete '/logout', to: 'sessions#destroy'
   resources :users
 end
